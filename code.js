@@ -1,2 +1,3 @@
+var WebApp = window.Telegram.WebApp;
 const searchParams = new URLSearchParams(window.location.search);
-alert(searchParams.get('train'));
+WebApp.showAlert(searchParams.has('train'));
